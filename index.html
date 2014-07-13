@@ -14,18 +14,9 @@
 function myFunction() {
     var x = document.getElementById("myTextarea").innerHTML
     x = x.replace(/(\n)/gm,"|\n");
-    //document.getElementById("myTextarea").innerHTML = x
-    //alert("1");
     x = x.replace(/^/gm,"|");
-    //document.getElementById("myTextarea").innerHTML = x
-    //alert("2");
     x = x.replace(/,/g , "|");
     alert(x);
-    //document.getElementById("myTextarea").innerHTML = x
-    //alert("3");
-    //document.getElementById("myTextarea").innerHTML = x
-    //alert("4");
-    //alert(x);
 }
 </script>
 </body>
