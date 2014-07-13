@@ -17,13 +17,16 @@ hello hello c
 function myFunction() {
     var x = document.getElementById("myTextarea").value
     x = x.replace(/(\n)/gm,"|\n");
+    document.getElementById("myTextarea").innerHTML = x
     alert("1");
     x = x.replace(/^/gm,"|");
-    alert("3");
-    x = x.replace(/,/g , "|");
-    alert("4");
     document.getElementById("myTextarea").innerHTML = x
-    alert("5");
+    alert("2");
+    x = x.replace(/,/g , "|");
+    document.getElementById("myTextarea").innerHTML = x
+    alert("3");
+    document.getElementById("myTextarea").innerHTML = x
+    alert("4);
     //alert(x);
 }
 </script>
