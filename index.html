@@ -16,7 +16,8 @@ hello hello
 <script>
 function myFunction() {
     var x = document.getElementById("myTextarea").value
-    x = x.replace(/(^)/gm,"|\n");
+    //x = x.replace(/(\n)/gm,"|\n");
+    x = x.replace(/^/gm,"|");
     alert(x);
 }
 </script>
