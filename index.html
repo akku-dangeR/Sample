@@ -8,12 +8,12 @@
 <textarea rows="50" cols="100">
 Paste the csv data here
 </textarea>
-
-<button onclick="myFunction()">Try it</button>
+<br>
+<button onclick="myFunction()">Change it</button>
 
 <script>
 function myFunction() {
-    alert("I am an alert box!");
+    alert(document.getElementById("myTextarea").value);
 }
 </script>
 </body>
