@@ -5,7 +5,7 @@
 
 <h1>Jirafy the counters : input csv format</h1>
 
-<textarea rows="50" cols="100">
+<textarea id="myTextarea" rows="50" cols="100">
 Paste the csv data here
 </textarea>
 
@@ -14,7 +14,7 @@ Paste the csv data here
 
 <script>
 function myFunction() {
-    alert(textareaObject.value);
+    alert(document.getElementById("myTextarea").value);
 }
 </script>
 </body>
