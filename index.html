@@ -16,7 +16,7 @@ function myFunction() {
     x = x.replace(/(\n)/gm,"|\n");
     x = x.replace(/^/gm,"|");
     x = x.replace(/,/g , "|");
-    alert(x);
+    document.getElementById("myTextarea").innerHTML=x
 }
 </script>
 </body>
