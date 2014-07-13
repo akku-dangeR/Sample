@@ -5,12 +5,11 @@
 <a href="http://github.cerner.com/gist/AD027142/4617">Sample query</a>
 <p> select the row ⌘+a , right click , select 'Copy Row Content', paste it in this text area, hit button </p>
 
-<textarea id="myTextarea" rows="50" cols="100"></textarea>
+<textarea onclick="this.select();" type='text' id="myTextarea" rows="50" cols="100"></textarea>
 
 <br>
 <button onclick="myFunction()">Change it</button>
 
-<input onclick="this.select();" type='text' value='copy me' />
 
 <script>
 function myFunction() {
