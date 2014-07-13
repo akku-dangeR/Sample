@@ -7,7 +7,7 @@
 
 <textarea id="myTextarea" rows="50" cols="100">
 Paste the csv data here
-hello hello</textarea>
+hello hello e</textarea>
 
 <br>
 <button onclick="myFunction()">Change it</button>
@@ -15,8 +15,8 @@ hello hello</textarea>
 <script>
 function myFunction() {
     var x = document.getElementById("myTextarea").value
-    //x = x.replace(/(\n)/gm,"|\n");
-    x = x.replace(/^/gm,"|").replace(/(\n)/gm,"|\n");
+    x = x.replace(/(\n)/gm,"|\n");
+    x = x.replace(/^/gm,"|")
     alert(x);
 }
 </script>
