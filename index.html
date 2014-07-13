@@ -17,9 +17,13 @@ hello hello b
 function myFunction() {
     var x = document.getElementById("myTextarea").value
     x = x.replace(/(\n)/gm,"|\n");
-    x = x.replace(/^/gm,"|")
+    alert("1");
+    x = x.replace(/^/gm,"|");
+    alert("3");
     x = x.replace(/,/g , "|");
-    document.getElementById("myTextarea").innerHTML =x
+    alert("4");
+    document.getElementById("myTextarea").innerHTML = x
+    alert("5");
     //alert(x);
 }
 </script>
